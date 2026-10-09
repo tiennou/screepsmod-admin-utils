@@ -70,16 +70,6 @@ Spawns a bot. `opts.auto` enables autoSpawning.
 
 Lists backend cronjobs. Intervals and disabled jobs come from `serverConfig.cronjobMgr`.
 
-### utils.setTickRate(value) <span style="color:red">DEPRECATED</span>
-
-Deprecated in favor of `system.setTickDuration(value)`   
-~~Sets the tick rate to value (in milliseconds)~~
-
-### utils.getTickRate() <span style="color:red">DEPRECATED</span>
-
-Deprecated in favor of `system.getTickDuration()`   
-~~Gets the current tick rate~~
-
 ### utils.setSocketUpdateRate(value)
 
 Sets socket update rate (in ms)
