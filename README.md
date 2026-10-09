@@ -78,6 +78,14 @@ Sets socket update rate (in ms)
 
 Returns current socket update rate
 
+### utils.setMaxLoopDuration(value)
+
+Sets the main loop stall reset (`mainLoopResetInterval`) in ms. Minimum value is 5000ms. Overridden by `serverConfig.maxLoopDuration` on startup and config reload.
+
+### utils.getMaxLoopDuration()
+
+Returns the current max loop duration. `5000` when unset.
+
 ### utils.setShardName(value)
 
 Sets the shard name
@@ -133,6 +141,7 @@ serverConfig:
   mapFile: /path/to/map.json # Alternative to map: import from a local JSON file
   tickRate: 200
   socketUpdateRate: 200
+  maxLoopDuration: 10000 # mainLoopResetInterval (ms). Script timeout stays at least 5000
   whitelist: # Does not restrict login, only restricts spawning
   - ags131
   - zeswarm
